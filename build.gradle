@@ -24,6 +24,10 @@ android {
     packagingOptions {
         exclude 'LICENSE.txt'
     }
+
+    lintOptions {
+       warning 'InvalidPackage'
+    }
 }
 
 repositories {
