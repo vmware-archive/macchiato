@@ -15,7 +15,7 @@ to your `build.gradle` to include this in your dependencies:
         }
     }
   ```
-3. Copy the macchiato .aar file you downloaded into `libs`+
+3. Copy the macchiato .aar file you downloaded into `libs`
 4. Finally add the dependencies to your `build.gradle`:
 
   ```groovy
