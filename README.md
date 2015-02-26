@@ -2,6 +2,27 @@
 
 [![Build Status](https://secure.travis-ci.org/pivotal/macchiato.svg?branch=master)](http://travis-ci.org/pivotal/macchiato)
 
+## Using
+
+  ```java
+  public class WaxTest extends ActivityInstrumentationTestCase2<DisActivity> {
+    public WaxTest() {
+      super(WaxActivity.class);
+    }
+
+    public void testOnAndOff() {
+      getActivity();
+
+      assertHasText("On")
+      assertDoesNotHaveText("Off")
+
+      clickOn(R.id.wax)
+      assertDoesNotHaveText("On")
+      assertHasText("Off")
+    }
+}
+  ```
+
 ## Download
 
 1. Download the latest macchiato release [here](https://github.com/pivotal/macchiato/releases)
