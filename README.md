@@ -1,5 +1,7 @@
 # macchiato
 
+![https://travis-ci.org/pivotal/macchiato.svg?branch=master](https://travis-ci.org/pivotal/macchiato.svg?branch=master)
+
 ## Download
 
 1. Download the latest macchiato release [here](https://github.com/pivotal/macchiato/releases)
