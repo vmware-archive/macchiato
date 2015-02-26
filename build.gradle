@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+    }
+}
+
 apply plugin: 'com.android.library'
 
 android {
@@ -14,6 +24,10 @@ android {
     packagingOptions {
         exclude 'LICENSE.txt'
     }
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
