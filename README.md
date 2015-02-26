@@ -1,6 +1,6 @@
 # macchiato
 
-![https://travis-ci.org/pivotal/macchiato.svg?branch=master](https://travis-ci.org/pivotal/macchiato.svg?branch=master)
+![https://travis-ci.org/pivotal/macchiato](https://travis-ci.org/pivotal/macchiato.svg?branch=master)
 
 ## Download
 
