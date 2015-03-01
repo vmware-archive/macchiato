@@ -5,6 +5,9 @@
 ## Using
 
 ```java
+import static io.pivotal.macchiato.assertHasText;
+import static io.pivotal.macchiato.assertDoesNotHaveText;
+
 public class WaxTest extends ActivityInstrumentationTestCase2<DisActivity> {
   public WaxTest() {
     super(WaxActivity.class);
