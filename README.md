@@ -16,7 +16,7 @@ public class WaxTest {
     assertHasText("On")
     assertDoesNotHaveText("Off")
 
-    clickOn(R.id.wax)
+    clickOn("Wax")
     assertDoesNotHaveText("On")
     assertHasText("Off")
   }
