@@ -44,6 +44,6 @@ to your `build.gradle` to include this in your dependencies:
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
     androidTestCompile 'com.android.support.test:runner:0.3'
     androidTestCompile 'com.android.support.test:rules:0.3'
-    androidTestCompile(name:'macchiato-0.1.0', ext:'aar')
+    androidTestCompile(name:'macchiato-0.1.1', ext:'aar')
   }
   ```
