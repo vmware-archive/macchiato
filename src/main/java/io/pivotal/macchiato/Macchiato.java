@@ -8,6 +8,9 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static android.support.test.espresso.action.ViewActions.typeText;
+import static android.support.test.espresso.matcher.ViewMatchers.withHint;
 import static org.hamcrest.Matchers.not;
 
 public class Macchiato {
@@ -20,6 +23,19 @@ public class Macchiato {
     viewWithText(text).check(matches(not(isDisplayed())));
   }
 
+  public static void clickOn(int id) {
+      viewWithId(id).perform(click());
+  }
+
+  public static void clickOn(String text) {
+    viewWithText(text).perform(click());
+  }
+
+  public static void fillField(String hint, String value) throws InterruptedException {
+    viewWithHint(hint).perform(typeText(value), closeSoftKeyboard());
+    Thread.sleep(500);
+  }
+
   private static ViewInteraction viewWithId(int id) {
     return onView(withId(id));
   }
@@ -28,7 +44,7 @@ public class Macchiato {
     return onView(withText(text));
   }
 
-  public static ViewInteraction clickOn(int id) {
-    return viewWithId(id).perform(click());
+  private static ViewInteraction viewWithHint(String hint) {
+    return onView(withHint(hint));
   }
 }
