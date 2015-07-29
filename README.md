@@ -7,14 +7,12 @@
 ```java
 import static io.pivotal.macchiato.*;
 
-public class WaxTest extends ActivityInstrumentationTestCase2<DisActivity> {
-  public WaxTest() {
-    super(WaxActivity.class);
-  }
+public class WaxTest {
+
+  @Rule
+  public ActivityTestRule<WaxActivity> activityRule = new ActivityTestRule<>(WaxActivity.class);
 
   public void testOnAndOff() {
-    getActivity();
-
     assertHasText("On")
     assertDoesNotHaveText("Off")
 
@@ -43,8 +41,9 @@ to your `build.gradle` to include this in your dependencies:
 
   ```groovy
   dependencies {
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.0')
-    androidTestCompile('com.android.support.test:testing-support-lib:0.1')
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
+    androidTestCompile 'com.android.support.test:runner:0.3'
+    androidTestCompile 'com.android.support.test:rules:0.3'
     androidTestCompile(name:'macchiato-0.1.0', ext:'aar')
   }
   ```
