@@ -1,5 +1,7 @@
 package io.pivotal.macchiato;
 
+import io.pivotal.macchiato.pages.Page;
+
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
@@ -33,7 +35,7 @@ public class Helpers {
         onView(withText(text)).perform(click());
     }
 
-    public static void fillField(String hint, String value) throws InterruptedException {
+    public static void fillField(String hint, String value) {
         onView(withHint(hint)).perform(typeText(value), closeSoftKeyboard());
     }
 }
