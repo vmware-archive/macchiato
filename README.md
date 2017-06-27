@@ -13,12 +13,12 @@ public class WaxTest {
   public ActivityTestRule<WaxActivity> activityRule = new ActivityTestRule<>(WaxActivity.class);
 
   public void testOnAndOff() {
-    assertHasText("On")
-    assertDoesNotHaveText("Off")
+    assertHasText("On");
+    assertDoesNotHaveText("Off");
 
-    clickOn("Wax")
-    assertDoesNotHaveText("On")
-    assertHasText("Off")
+    clickOn("Wax");
+    assertDoesNotHaveText("On");
+    assertHasText("Off");
   }
 }
 ```
@@ -44,6 +44,6 @@ to your `build.gradle` to include this in your dependencies:
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
     androidTestCompile 'com.android.support.test:runner:0.3'
     androidTestCompile 'com.android.support.test:rules:0.3'
-    androidTestCompile(name:'macchiato-0.2.0', ext:'aar')
+    androidTestCompile(name:'macchiato-0.3.0', ext:'aar')
   }
   ```

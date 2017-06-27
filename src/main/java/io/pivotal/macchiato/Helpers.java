@@ -11,7 +11,7 @@ import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.matcher.ViewMatchers.withHint;
 import static org.hamcrest.Matchers.not;
 
-public class Macchiato {
+public class Helpers {
 
     // Assertions
 
