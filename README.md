@@ -41,9 +41,8 @@ to your `build.gradle` to include this in your dependencies:
 
   ```groovy
   dependencies {
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
-    androidTestCompile 'com.android.support.test:runner:0.3'
-    androidTestCompile 'com.android.support.test:rules:0.3'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:runner:0.5'
     androidTestCompile(name:'macchiato-0.3.0', ext:'aar')
   }
   ```
