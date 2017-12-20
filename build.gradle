@@ -2,22 +2,23 @@ buildscript {
     repositories {
         mavenCentral()
         jcenter()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 1
         versionName "0.4.0"
     }
@@ -34,11 +35,10 @@ android {
 repositories {
     mavenCentral()
     jcenter()
+    google()
 }
 
 dependencies {
-    dependencies {
-        compile 'com.android.support.test.espresso:espresso-core:2.2.2'
-        compile 'com.android.support.test:runner:0.5'
-    }
+    implementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support.test:runner:1.0.1'
 }
