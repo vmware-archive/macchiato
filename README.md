@@ -1,7 +1,5 @@
 # macchiato
 
-[![Build Status](https://secure.travis-ci.org/pivotal/macchiato.svg?branch=master)](http://travis-ci.org/pivotal/macchiato)
-
 ## Using
 
 ```java
